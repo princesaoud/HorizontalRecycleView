@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="2dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="120dp"
+        app:cardCornerRadius="4dp"
+        app:cardMaxElevation="2dp"
+        app:cardElevation="1dp"
+        android:layout_centerInParent="true"
+        android:layout_height="120dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="90dp"
+                        android:scaleType="centerCrop"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/image"
+                        android:src="@drawable/ic_launcher_background"
+                        android:layout_height="90dp" />
+                
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@+id/image"
+                        android:id="@+id/name"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/kamakiri"
+                        android:textColor="#111"
+                        android:gravity="center"
+                        android:layout_marginBottom="5dp"
+                        android:autoSizeTextType="uniform"
+                        android:autoSizeMinTextSize="5sp"
+                        android:autoSizeMaxTextSize="15sp"
+                        android:layout_height="20dp" />
+
+            </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
